@@ -5,15 +5,15 @@ RESTful API
 
 Code
 ---------------
-1. All method's (or function's) parameters are in use.
+1. There is a test (at least one) which covers added or modified functionality (all cases).
+2. All method's (or function's) parameters are in use.
    Preferably: there is an automated check which fails a build when this rule is violated.
    Highlights "dead" code and missed functionality.
-2. All configuration parameters are still in use.
+3. All configuration parameters are still in use.
    Highlights "dead" code.
-3. Exceptions and error conditions are logged properly.
-4. App doesn't log sensitive data (tokens, raw request or responses, PII).
-5. Order is not expected in the code which iterates over HashSet values or HashMap keys.
-6. There is a test (at least one) which covers added or modified functionality (all cases).
+4. Exceptions and error conditions are logged properly.
+5. App doesn't log sensitive data (tokens, raw request or responses, PII).
+6. Order is not expected in the code which iterates over HashSet values or HashMap keys.
 
 RegEx
 ---------------
