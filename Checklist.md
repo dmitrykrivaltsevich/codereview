@@ -12,6 +12,7 @@ Code
    Highlights "dead" code
 3. Exceptions and error conditions are logged properly
 4. App doesn't log sensitive data (tokens, raw request or responses, PII).
+5. Order is not expected in the code which iterates over HashSet values or HashMap keys.
    
 Playframework (Scala)
 ---------------
@@ -21,4 +22,8 @@ Playframework (Scala)
 Scala
 ---------------
 1. Expected that `Future.fallbackTo { ... }` code inside curly brackets runs even when `Future` completes successfully.
+
+AWS
+---------------
+1. Avoid "t2.*" family or make sure that CPU credits will be a positive number in order to avoid performance degradation. Note that initial amount of credits will expire after 24h. Scenario when _credits consumed = credits earned_ it will lead to performance degradation.
 
