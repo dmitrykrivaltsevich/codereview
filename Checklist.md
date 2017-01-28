@@ -36,7 +36,7 @@ Scala
 
 JavaScript
 ---------------
-1. String checks with `indexOf` also works for strings in different registers (i.e. case-insensitive)
+1. String checks with `indexOf` also work for strings in different registers (i.e. case-insensitive)
 
 AWS
 ---------------
