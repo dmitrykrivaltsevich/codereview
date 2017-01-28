@@ -5,7 +5,7 @@ RESTful API
 
 Code
 ---------------
-1. There is a test (at least one) which covers added or modified functionality (all cases).
+1. There is a test (at least one) which covers added or modified functionality (all cases / branches).
 2. All method's (or function's) parameters are in use.
    Preferably: there is an automated check which fails a build when this rule is violated.
    Highlights "dead" code and missed functionality.
