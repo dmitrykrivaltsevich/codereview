@@ -34,6 +34,10 @@ Scala
 ---------------
 1. Expected that `Future.fallbackTo { ... }` code inside curly brackets runs even when `Future` completes successfully.
 
+JavaScript
+---------------
+1. String checks with `indexOf` also works for strings in different registers (i.e. case-insensitive)
+
 AWS
 ---------------
 1. Avoid "t2.*" family or make sure that CPU credits will be a positive number in order to avoid performance degradation. Note that initial amount of credits will expire after 24h. Scenario when _credits consumed = credits earned_ it will lead to performance degradation.
