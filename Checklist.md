@@ -1,6 +1,6 @@
 RESTful API
 ---------------
-1. Endpoints don't contain _vebrs_ (should be _nouns_).
+1. Endpoints contain _nouns_ (and never _verbs_).
    Highlights flaws in the API in case of violation.
 
 Code
