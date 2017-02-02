@@ -1,6 +1,16 @@
 General Code Review Rules
 ---------------
-1. The intention of a code review is to find defects and not style variations. Defects can be failures, defects in logic, security vulnerabilities, specification mismatch, missed implementation, inefficient implementation (e.g. usage of O(n^2) algorithms for the task where O(log(n)) algorithms is available) or violations of best practices which leads to defects.
+1. The intention of a code review is to find defects and not style variations. Defects can be:
+  - failures
+  - defects in logic
+  - security vulnerabilities
+  - specification mismatch
+  - missed implementation
+  - inefficient implementation
+    - usage of O(n^2) algorithms for the task where O(log(n)) algorithms is available
+    - similar computations can be done with a smaller version of a program (less code - better)
+    - similar code is available in a known and well-tested library
+  - violations of best practices which leads to defects.
 2. Use words _can_ or _could_ instead of _don't_ in your comments.
 3. Always show _how_ as a part of any suggestion.
 4. _Be_-sentences are forbidden, (e.g. be more patient, be smart, be nice, etc)
