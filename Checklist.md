@@ -1,7 +1,7 @@
 General Code Review Rules
 ---------------
 1. The intention of a code review is to find defects and not style variations. Defects can be:
-  - failures
+  - failures (e.g. certain parameters lead to unexpected behaviour, unspecified results, exceptions or errors reports) 
   - defects in logic
   - security vulnerabilities
   - specification mismatch
