@@ -19,6 +19,7 @@ RESTful API
 ---------------
 1. Endpoints contain _nouns_ (and never _verbs_).
    Highlights flaws in the API in case of violation.
+2. Use UUID or random hashes as IDs instead of numbers in order to prevent data leakage.
 
 Code
 ---------------
