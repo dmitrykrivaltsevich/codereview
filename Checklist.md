@@ -58,5 +58,5 @@ JavaScript
 
 AWS
 ---------------
-1. Avoid "t2.*" family or make sure that CPU credits will be a positive number in order to avoid performance degradation. Note that initial amount of credits will expire after 24h. Scenario when _credits consumed = credits earned_ it will lead to performance degradation.
+1. Avoid "t2.*" family or make sure that CPU credits will be a positive number in order to avoid performance degradation. Note that initial amount of credits will expire after 24h. In case when _credits consumed = credits earned_ it will lead to performance degradation.
 
