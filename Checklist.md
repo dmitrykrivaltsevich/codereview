@@ -51,6 +51,7 @@ Playframework (Scala)
 Scala
 ---------------
 1. Expected that `Future.fallbackTo { ... }` code inside curly brackets runs even when `Future` completes successfully.
+2. Expected that `Option.forall( ... )` or `Seq.forall( ... )` returns `true` for _any_ predicate when the value is `None` or `Nil` respectively. See [Vacuous truth](https://en.wikipedia.org/wiki/Vacuous_truth)
 
 JavaScript
 ---------------
