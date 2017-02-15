@@ -32,6 +32,7 @@ Code
 4. Exceptions and error conditions are logged properly.
 5. App doesn't log sensitive data (tokens, raw request or responses, PII).
 6. Order is not expected in the code which iterates over HashSet values or HashMap keys.
+7. Serialization and deserialization are aligned and work with same fields in the same order.
 
 RegEx
 ---------------
