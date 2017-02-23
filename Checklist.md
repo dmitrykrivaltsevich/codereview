@@ -48,6 +48,7 @@ Playframework (Scala)
 1. `play.api.libs.concurrent.Execution.Implicits.defaultContext` is used instead of `scala.concurrent.ExecutionContext.Implicits.global`.
    Use DI: `class Service @Inject() (...)(implicit ec: ExecutionContext) { ... }`. This rule can be relaxed for tests.
 2. `ActorSystem` is properly closed after usage (violation of this rule often happens in tests).
+3. Sequence of `route(app, request)` in tests can be executed in any order and it's expected.
 
 Scala
 ---------------
