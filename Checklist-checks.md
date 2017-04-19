@@ -1,0 +1,26 @@
+- [ ] RESTful API: endpoints don't include _verbs_, only _nouns_
+- [ ] RESTful API: IDs are randomized
+- [ ] Code: proper algorithm is used
+- [ ] Code: computations is done with the smallests number of instructions and resource usage
+- [ ] Code: library code is re-used when it is possible
+- [ ] Code: new or modified functionality covered by test (all branches)
+- [ ] Code: method's (or function's) parameters are in use
+- [ ] Code: configuration parameters are in use
+- [ ] Code: exceptions and error conditions are logged
+- [ ] Code: app doesn't log sensitive data (PII, tokens, raw requests / responses, etc)
+- [ ] Code: order is not expected in the code which iterates over HashSet values or HashMap keys
+- [ ] Code: serialization and deserialization are aligned and work with the same fields in the same order
+- [ ] Scala: expected that `Future.fallbackTo { ... }` code inside curly brackets runs even when `Future` completes successfully
+- [ ] Scala: expected that `Option.forall( ... )` or `Seq.forall( ... )` returns `true` for _any_ predicate when the value is `None` or `Nil` respectively
+- [ ] Scala: all fields in a case class have either case class type or implement `equals` and `hashCode` methods
+- [ ] Scala: variable (`var`) or mutable collection is not a member of class or it is expected that modification of this collection is not thread safe (pattern: read -> modify -> save back)
+- [ ] Play: `class Service @Inject() (...)(implicit ec: ExecutionContext) { ... }` or  `play.api.libs.concurrent.Execution.Implicits.defaultContext` is in use.
+- [ ] Play: sequence of `route(app, request)` in tests can be executed in any order and it's expected
+- [ ] RegEx: expression is case-insensitive (`(?i)`) or it is clear that it should be case-sensitive
+- [ ] RegEx: expression doesn't rely on position (`^$`)
+- [ ] RegEx: Quantifiers (`{1,3}`) are well-reasoned
+- [ ] RegEx: no ReDoS-like expressions `(a+)+`
+- [ ] RegEx: quantifiers (`+*`) are well-reasoned
+- [ ] RegEx: blacklist includes all Unicode-alternatives
+- [ ] JavaScript: string checks with `indexOf` also work for strings in different registers (i.e. case-insensitive)
+- [ ] AWS: `t2.*` family not used in production for critical apps
