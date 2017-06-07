@@ -57,6 +57,10 @@ Scala
 3. All fields in case class have either case class type or implement `equals` and `hashCode` methods. For example, `scala.util.matching.Regex` cannot be defined as a field in a case class.
 4. Variable (`var`) or mutable collection is not a member of class or it is expected that modification of this collection is not thread safe (pattern: read -> modify -> save back).
 
+Java / Scala
+---------------
+1. All fields of an instance of Singleton can be safely used in multiple threads (i.e. thread-safe). For example, `SimpleDateFormat` in Java requires external synchronization or shouldn't be used as a class field in a Singleton. 
+
 JavaScript
 ---------------
 1. String checks with `indexOf` also work for strings in different registers (i.e. case-insensitive).
