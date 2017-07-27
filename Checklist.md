@@ -59,7 +59,8 @@ Scala
 
 Java / Scala
 ---------------
-1. All fields of an instance of Singleton can be safely used in multiple threads (i.e. thread-safe). For example, `SimpleDateFormat` in Java requires external synchronization or shouldn't be used as a class field in a Singleton. 
+1. All fields of an instance of Singleton can be safely used in multiple threads (i.e. thread-safe). For example, `SimpleDateFormat` in Java requires external synchronization or shouldn't be used as a class field in a Singleton.
+2. Type of elements in collection and the type of an argument in `contains` operation should be the same. The compiler will not fail if one pass an integer into the `contains` operation on list which contains only strings because of the definition of the method: `contains(Object o)`.
 
 JavaScript
 ---------------
