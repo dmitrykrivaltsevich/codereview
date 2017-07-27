@@ -15,6 +15,7 @@
 - [ ] Scala: all fields in a case class have either case class type or implement `equals` and `hashCode` methods
 - [ ] Scala: variable (`var`) or mutable collection is not a member of class or it is expected that modification of this collection is not thread safe (pattern: read -> modify -> save back)
 - [ ] Java / Scala: all fields of an instance of Singleton can be safely used in multiple threads (i.e. thread-safe)
+- [ ] Java / Scala: type of elements in collection and the type of an argument in contains operation should be the same.
 - [ ] Play: `class Service @Inject() (...)(implicit ec: ExecutionContext) { ... }` or  `play.api.libs.concurrent.Execution.Implicits.defaultContext` is in use.
 - [ ] Play: sequence of `route(app, request)` in tests can be executed in any order and it's expected
 - [ ] RegEx: expression is case-insensitive (`(?i)`) or it is clear that it should be case-sensitive
