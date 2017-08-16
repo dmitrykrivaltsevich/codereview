@@ -1,3 +1,5 @@
+[Compact version for PRs](https://raw.githubusercontent.com/dmitrykrivaltsevich/codereview/master/Checklist-checks.md)
+
 General Code Review Rules
 ---------------
 1. The intention of a code review is to find defects and not style variations. Defects can be:
