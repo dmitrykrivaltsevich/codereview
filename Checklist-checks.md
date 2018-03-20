@@ -10,6 +10,7 @@
 - [ ] Code: app doesn't log sensitive data (PII, tokens, raw requests / responses, etc)
 - [ ] Code: order is not expected in the code which iterates over HashSet values or HashMap keys
 - [ ] Code: serialization and deserialization are aligned and work with the same fields in the same order
+- [ ] Code: is it safe to use default values from configuration in production
 - [ ] Scala: expected that `Future.fallbackTo { ... }` code inside curly brackets runs even when `Future` completes successfully
 - [ ] Scala: expected that `Option.forall( ... )` or `Seq.forall( ... )` returns `true` for _any_ predicate when the value is `None` or `Nil` respectively
 - [ ] Scala: all fields in a case class have either case class type or implement `equals` and `hashCode` methods
