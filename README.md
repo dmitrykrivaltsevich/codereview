@@ -9,7 +9,7 @@ General Code Review Rules
   - specification mismatch
   - missed implementation
   - inefficient implementation
-    - usage of O(n^2) algorithms for the task where O(log(n)) algorithms is available
+    - usage of O(n^2) algorithms for the task where O(log(n)) algorithms are available
     - similar computations can be done with a smaller version of a program (less code - better)
     - similar code is available in a known and well-tested library
   - violations of best practices which leads to defects.
