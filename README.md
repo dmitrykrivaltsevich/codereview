@@ -26,16 +26,20 @@ RESTful API
 Code
 ---------------
 1. There is a test (at least one) which covers added or modified functionality (all cases / branches).
-2. All method's (or function's) parameters are in use.
+1. All method's (or function's) parameters are in use.
    Preferably: there is an automated check which fails a build when this rule is violated.
    Highlights "dead" code and missed functionality.
-3. All configuration parameters are still in use.
+1. All configuration parameters are still in use.
    Highlights "dead" code.
-4. Exceptions and error conditions are logged properly.
-5. App doesn't log sensitive data (tokens, raw request or responses, PII).
-6. Order is not expected in the code which iterates over HashSet values or HashMap keys.
-7. Serialization and deserialization are aligned and work with same fields in the same order.
-8. Is it safe to use default values from configuration in production.
+1. Exceptions and error conditions are logged properly.
+1. App doesn't log sensitive data (tokens, raw request or responses, PII).
+1. Order is not expected in the code which iterates over HashSet values or HashMap keys.
+1. Is it safe to use default values from configuration in production.
+
+Serialization / deserialization
+---------------
+1. Serialization and deserialization are aligned and work with same fields in the same order.
+1. String interpolation is not used for serialization of objects or it's safe to serialize values into string (no escape logic needed).
 
 RegEx
 ---------------
